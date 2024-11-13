@@ -1,4 +1,5 @@
 ## Import packages 
+```
 import pandas as pd 
 import numpy as np 
 import matplotlib.pyplot as plt 
@@ -23,8 +24,10 @@ Conv2D, MaxPooling2D
 from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping 
 plt.rcParams["figure.figsize"] = (10,6)
 plt.rcParams['figure.dpi'] = 300 
-colors = ["#B6EE56", "#D85F9C", "#EEA756", "#56EEE8"] 
+colors = ["#B6EE56", "#D85F9C", "#EEA756", "#56EEE8"]
+```
 ## Target Value Distribution 
+```
 try: 
  if tf.test.gpu_device_name(): 
  physical_devices = tf.config.experimental.list_physical_devices('GPU') 
@@ -56,8 +59,10 @@ img = mpimg.imread(image_path)
  plt.tight_layout() 
 for target in class_names: 
  sample_bringer(PATH, target=target) 
-alz_dict = {index: img for index, img in enumerate(data.class_names)} 
+alz_dict = {index: img for index, img in enumerate(data.class_names)}
+```
 ## class Process: 
+```
  def _init_(self, data): 
  self.data = data.map(lambda x, y: (x/255, y)) 
  def create_new_batch(self): 
@@ -93,8 +98,10 @@ y=y_train.numpy())
 class_weights = dict(zip(np.unique(y_train), class_weight)) 
 ## Model Building(CNN & RNN) 
 from keras.models import Sequential 
-from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, SimpleRNN, 
+from keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, SimpleRNN,
+```
 ## TimeDistributed 
+```
 def build_model(): 
  model = Sequential() 
  model.add(Conv2D(filters=16, kernel_size=(3, 3), strides=(1, 1), activation="relu", 
@@ -108,8 +115,10 @@ kernel_initializer='he_normal'))
 kernel_initializer='he_normal')) 
  model.add(MaxPooling2D(pool_size=(2, 2))) 
  ## Add TimeDistributed layer to make the output 3D 
- model.add(TimeDistributed(Flatten())) 
+ model.add(TimeDistributed(Flatten()))
+```
  ## Add Simple RNN layer 
+ ```
  model.add(SimpleRNN(units=64, activation='relu')) 
  model.add(Dense(128, activation="relu", kernel_initializer='he_normal')) 
  model.add(Dense(64, activation="relu")) 
@@ -136,8 +145,10 @@ EPOCHS = 5
 checkpoint_callback = checkpoint_callback() 
 early_stopping = early_stopping(patience=5) 
 callbacks = [checkpoint_callback, early_stopping] 
-Loss and Accuracy 
+Loss and Accuracy
+```
 ## Save the trained model 
+```
 model.save("your_model_name.h5") 
 fig, ax = plt.subplots(1, 2, figsize=(12,6), facecolor="khaki") 
 ax[0].set_facecolor('palegoldenrod') 
@@ -230,3 +241,4 @@ fontweight="bold", fontsize=10)
  nok_text.set_bbox(dict(facecolor='maroon', alpha=0.5)) 
  plt.gca().axes.yaxis.set_ticklabels([]) 
  plt.gca().axes.xaxis.set_ticklabels([])
+```
