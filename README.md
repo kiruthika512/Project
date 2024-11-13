@@ -6,8 +6,11 @@ A comprehensive approach Alzheimer's disease identifying is presented by combini
 
 ## Features
 ● Early Detection
+
 ● Advanced Pattern Recognition
+
 ● Data Augmentation and Normalization
+
 ● Potential for Standardization
 ## Requirements
 HARDWARE ENVIRONMENT
@@ -32,18 +35,23 @@ Output1 - Brain MRI Sample in Batch
 ![MRI scan](https://github.com/user-attachments/assets/9f1ef0a5-74f6-44fd-bca6-8a0caa66b708)
 
 Output2 - Predicted Values
+
 ![Predicted values](https://github.com/user-attachments/assets/6ca5252b-9f2a-49f4-bd55-35113c0951d2)
 
 Output3 - Loss and Accuracy
+
 ![Loss and accuracy](https://github.com/user-attachments/assets/6c4f2129-d386-4d41-a04e-b9b564acaecf)
 
 Output4 - Confusion Matrix
+
 ![Confusion matrix](https://github.com/user-attachments/assets/d431e3f4-74e2-497c-a98e-a4e992fc4e14)
 
 Output5 - Alzheimer Probability of a Random MRI from Test Data
+
 ![probability](https://github.com/user-attachments/assets/4df52847-8807-433b-a23e-b8358ac064ce)
 
 Output6 - Predicted Output
+
 ![Output](https://github.com/user-attachments/assets/7ca3bc76-223f-460d-a345-6e960b954da1)
 
 ## Results and Impact
