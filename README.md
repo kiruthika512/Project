@@ -14,22 +14,34 @@ A comprehensive approach Alzheimer's disease identifying is presented by combini
 ● Potential for Standardization
 ## Requirements
 HARDWARE ENVIRONMENT
+
 ● NVIDIA GeForce RTX 3080
+
 ● 32 GB RAM
+
 ● 12 Gen Intel Core I5-140p
+
 SOFTWARE ENVIRONMENT
+
 ● Python 3.8
+
 ● Anaconda
+
 ● Tensorflow
+
 ● Matplotlib and Seaborn
+
 TECHNOLOGIES USED
+
 ● Jupyter notebook
+
 ● Deep Learning
 
 ## System Architecture
 ![Architecture](https://github.com/user-attachments/assets/ddddcd67-2e6c-4bb2-a7d8-1174c377d54b)
 
 ##Output
+
 Output1 - Brain MRI Sample in Batch
 
 ![MRI scan](https://github.com/user-attachments/assets/9f1ef0a5-74f6-44fd-bca6-8a0caa66b708)
@@ -61,4 +73,5 @@ In the end, this project's practical implementation should improve Alzheimer's e
 
 ## Articles published / References
 A. Saxena and H. Kaur, "Alzheimer's Disease (AD) Detection Using Various Machine Learning Techniques: A Systematic Review," 2023 6th International Conference on Contemporary Computing and Informatics (IC3I), Gautam Buddha Nagar, India, 2023
+
 B. S. Rao and M. Aparna, "A Review on Alzheimer’s Disease Through Analysis of MRI Images Using Deep Learning Techniques," in IEEE Access, vol. 11, pp. 71542-71556, 2023
