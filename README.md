@@ -28,6 +28,7 @@ TECHNOLOGIES USED
 
 ##Output
 Output1 - Brain MRI Sample in Batch
+
 ![MRI scan](https://github.com/user-attachments/assets/9f1ef0a5-74f6-44fd-bca6-8a0caa66b708)
 
 Output2 - Predicted Values
